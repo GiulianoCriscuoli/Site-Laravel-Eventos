@@ -1,0 +1,29 @@
+.container-form {
+    padding: 40px 0;
+}
+
+.title-form {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #c55b5b;
+    font-size: 40px;
+}
+
+.form-group {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.form-group span  {
+    color: #c55b5b;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-group select {
+    max-width: 25%;
+}
+
+.form-group select.uf-form {
+    max-width: 50%;
+}

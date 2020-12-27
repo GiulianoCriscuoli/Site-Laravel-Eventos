@@ -86,6 +86,16 @@ nav .navbar-nav .nav-link:hover {
     text-align: center;
 }
 
+.msg {
+    background-color:#D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
 .events-container .subtitle {
     color: #4b4343;
     margin-bottom: 30px;
@@ -93,14 +103,17 @@ nav .navbar-nav .nav-link:hover {
 }
 
 .events-container .card {
-    flex: 1 1 0;
+    /* flex: 1 1 0; */
     max-width: 25%;
     border-radius: 10px;
     padding: 0;
+    margin: 10px;
 }
 
 .cards-container {
     display: flex;
+    justify-content: center;
+    
 }
 
 .card-body {
@@ -108,10 +121,16 @@ nav .navbar-nav .nav-link:hover {
     box-shadow: 3px 2px 14px #c55b5b;
 }
 
+.calendar-area {
+    display: flex;
+    margin: 10px 0;
+}
+
 .card .card-date {
     font-size: 13px;
     color: #4b4343;
     font-weight: 500;
+    margin: 5px;
 }
 
 .card .card-title {
@@ -121,9 +140,22 @@ nav .navbar-nav .nav-link:hover {
     margin: 10px 0px;
 }
 
-.cards-persons {
+.card-localization--area {
+    display: flex;
     font-size: 14px;
+    color: #4b4343;
+    margin: 10px 0;
+}
+
+.card-persons {
+    font-size: 13px;
     color: #4b4343; 
+    font-weight: bold;
+}
+
+.card-resume {
+    color: #4b4343; 
+    font-size: 14px;
 }
 
 footer {

@@ -20,4 +20,20 @@ class EventController extends Controller
     {
         return view('events.create');
     }
+
+    public function store(Request $request)
+    {
+        $createEvent = new Event;
+
+        $createEvent->title = $request->title;
+        $createEvent->resume = $request->resume;
+        $createEvent->uf = $request->uf;
+        $createEvent->city = $request->city;
+        $createEvent->private = $request->private;
+        $createEvent->description = $request->description;
+
+        $createEvent->save();
+
+        return redirect('/')->with('msg', 'Evento criado com sucesso!');
+    }
 }
