@@ -12,11 +12,38 @@
     <title>@yield('title')</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg  bg-dark">
+            <div class="collapse navbar-collapse" id="navbar">
+                <a href="/" class="navbar brand">
+                    Programador De Eventos
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link"> Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('events.create')}}" class="nav-link">Criar eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/" class="nav-link"> Logar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/" class="nav-link"> Faça seu cadastro</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     @yield('content')
 
+    <footer>
+        Produzido por <a href="">Giuliano Criscuoli</a> 
+    </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
 </html>

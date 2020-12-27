@@ -2,3 +2,149 @@
     box-sizing: border-box;
     font-family: 'Lato';
 }
+
+a {
+    text-decoration: none;
+}
+/* 
+body {
+    min-height: 100vh;
+    position: relative; 
+} */
+
+.row {
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.btn-primary.red-button {
+    background-color: #ce1b1b;
+    border: solid 2px #aa0b0b;
+}
+
+.btn-primary.red-button:hover {
+    background-color: #aa0b0b;
+    border-color: #aa0b0b;
+}
+
+#navbar {
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+nav .navbar {
+    font-size: 20px;
+    text-decoration: none !important;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    color: #c55b5b;
+    text-transform: uppercase;
+    border: solid #c55b5b 3px;
+}
+
+nav .navbar-nav .nav-link {
+    color: #FFF;
+    transition: all linear .2s;
+}
+
+nav .navbar-nav .nav-link {
+    font-size: 20px;
+}
+
+nav .navbar:hover,
+nav .navbar-nav .nav-link:hover {
+    color: #c55b5b;
+    
+}
+
+.search-container {
+    padding: 50px;
+    text-align: center;
+}
+
+.search-container {
+    color: #c55b5b;
+    margin: 20px 0; 
+    font-weight: 900;
+}
+
+.search-container form {
+    width: 50%;
+    margin: 20px auto;
+}
+
+.events-container {
+    padding-bottom: 50px;
+}
+
+.events-container h2 {
+    margin-bottom: 10px;
+    color: #c55b5b;
+    text-align: center;
+}
+
+.events-container .subtitle {
+    color: #4b4343;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.events-container .card {
+    flex: 1 1 0;
+    max-width: 25%;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.cards-container {
+    display: flex;
+}
+
+.card-body {
+    border: #c55b5b 1px solid;
+    box-shadow: 3px 2px 14px #c55b5b;
+}
+
+.card .card-date {
+    font-size: 13px;
+    color: #4b4343;
+    font-weight: 500;
+}
+
+.card .card-title {
+    color: #212121;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.cards-persons {
+    font-size: 14px;
+    color: #4b4343; 
+}
+
+footer {
+    text-align: center;
+    background-color:#212529;
+    color: #FFF;
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+}
+
+footer a {
+    color: #c55b5b !important;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ce1b1b !important;
+
+}
+
+
+
+
