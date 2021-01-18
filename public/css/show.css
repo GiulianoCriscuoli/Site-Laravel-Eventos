@@ -1,0 +1,23 @@
+.row-event {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-event {
+    color: #c55b5b;
+    font-size: 35px;
+}
+
+ion-icon {
+    color: #ce1b1b;
+}
+
+.container-info .event-city {
+    color: #484646;
+    font-weight: bold;
+}
+
+.container-info ion-icon {
+    margin-right: 10px;
+}
+

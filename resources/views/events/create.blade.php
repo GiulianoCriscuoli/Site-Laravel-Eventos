@@ -8,8 +8,13 @@
 
     <h2 class="title-form">Cadastre o seu evento aqui</h2>
 
-    <form action="{{route('events.create')}}" method="POST">
+    <form action="{{route('events.create')}}" method="POST" enctype="multipart/form-data">
         @csrf
+        <div class="form-group">
+            <label for="image">Imagem do evento:</label>
+            <input type="file" id="image" name="image" class="form-control-file">
+        </div>
+
         <div class="form-group">
             <label for="title">Título do evento:</label>
             <input type="text" id="title" name="title" class="form-control">

@@ -24,11 +24,14 @@
         @foreach($listEvents as $event)
         <div class="col-md-3 card">
             <div class="card-body">
+                <div class="img-event">
+                    <img class="img-fluid" src="{{ 'images/upload/'.$event->image }}" alt="{{ $event->title }}">
+                </div>
                 <div class="calendar-area">
                     <div> @include('icons.calendar')</div>
                     <div class="card-date">99/99/9999</div>
                 </div>
-                <div class="card-title">{{$event->title}}</div>
+                <div class="card-title">{{ $event->title }}</div>
 
                 <div class="card-resume">
                     {{ $event->resume }}
@@ -40,7 +43,7 @@
                 </div>
                
                 <div class="card-persons" style="padding: 10px 0;">x participantes</div>
-                <a href="#" class="btn btn-primary red-button">Saiba mais</a>
+                <a href="{{ 'events/'.$event->id }}" class="btn btn-primary red-button">Saiba mais</a>
             </div>
         </div>
             

@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/form.css">
+    <link rel="stylesheet" href="/css/show.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet">
