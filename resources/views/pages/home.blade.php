@@ -29,7 +29,7 @@
                 </div>
                 <div class="calendar-area">
                     <div> @include('icons.calendar')</div>
-                    <div class="card-date">99/99/9999</div>
+                    <div class="card-date">{{ date('d/m/Y'), strtotime($event->date)}}</div>
                 </div>
                 <div class="card-title">{{ $event->title }}</div>
 
@@ -48,6 +48,10 @@
         </div>
             
         @endforeach
+
+        @if(count($listEvents) == 0 )
+            <p>Não há eventos a serem visualizados</p>
+        @endif
     </div>
 </div>
 @endsection

@@ -27,3 +27,7 @@
 .form-group select.uf-form {
     max-width: 50%;
 }
+
+.has-event .form-group {
+    margin: 10px 0;
+}

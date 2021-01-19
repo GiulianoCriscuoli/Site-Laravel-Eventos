@@ -19,6 +19,10 @@
             <label for="title">Título do evento:</label>
             <input type="text" id="title" name="title" class="form-control">
         </div>
+        <div class="form-group">
+            <label for="date">Data do evento:</label>
+            <input type="date" id="date" name="date" class="form-control">
+        </div>
 
         <div class="form-group">
             <label for="resume">Resumo: <span>(Descreva um breve resumo do evento)</span></label>
@@ -72,6 +76,22 @@
         <div class="form-group">
             <label for="title">Descreva o evento:</label>
             <textarea name="description" id="description" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group has-event">
+            <label for="items"> O que terá no evento?</label>
+            <div class="form-group">
+                <input type="checkbox" name="items[]" value="cadeiras"> Cadeiras
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="items[]" value="comida"> Comida
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="items[]" value="bebida"> Bebida
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="items[]" value="premios"> Prêmios
+            </div>
         </div>
 
         <div class="form-group">
