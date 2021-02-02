@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/form.css">
     <link rel="stylesheet" href="/css/show.css">
+    <link rel="stylesheet" href="/css/authenticate.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet">
@@ -28,10 +29,10 @@
                         <a href="{{ route('events.create')}}" class="nav-link">Criar eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/" class="nav-link"> Logar</a>
+                        <a href="{{ route('login') }}" class="nav-link"> Logar</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/" class="nav-link"> Faça seu cadastro</a>
+                        <a href="{{ route('register') }}" class="nav-link"> Faça seu cadastro</a>
                     </li>
                 </ul>
             </div>
