@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/', [EventController::class, 'index']);
-Route::get('/events/create', [EventController::class, 'create'])->name('events.create');
+Route::get('/events/create', [EventController::class, 'create'])->name('events.create')->middleware('auth');
 Route::post('/events/create', [EventController::class, 'store'] );
 Route::get('/events/{id}', [EventController::class, 'show'])->name('events.show');
 
