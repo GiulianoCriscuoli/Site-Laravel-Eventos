@@ -34,6 +34,9 @@
                     <li class="nav-item">
                         <a href="{{ route('register') }}" class="nav-link"> Faça seu cadastro</a>
                     </li>
+                    {{-- <li class="nav-item">
+                        <a href="{{ route('logout') }}" class="nav-link">Sair</a>
+                    </li> --}}
                 </ul>
             </div>
         </nav>

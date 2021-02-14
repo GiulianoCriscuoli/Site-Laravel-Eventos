@@ -13,7 +13,7 @@
             <h2 class="title-event">{{ $event->title }}</h2>
             <p class="event-city"><ion-icon name="location-outline"></ion-icon>{{ $event->city }}</p>
             <p class="event-participants"><ion-icon name="people-outline"></ion-icon>99 participantes</p>
-            <p class="owner"><ion-icon name="star-outline"></ion-icon>{{ $owner['name']}} </p>
+            <p class="owner"><ion-icon name="star-outline"></ion-icon>{{ $owner['name'] }} </p>
             <div class="calendar-area">
                 <div> @include('icons.calendar')</div>
                 <div class="card-date">{{ date('d/m/Y'), strtotime($event->date)}}</div>
