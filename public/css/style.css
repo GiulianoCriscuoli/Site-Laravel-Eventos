@@ -188,8 +188,3 @@ footer a:hover {
     padding: 0;
     display: inline-block;
 }
-
-table td,
-table th {
-    border: none !important;
-}

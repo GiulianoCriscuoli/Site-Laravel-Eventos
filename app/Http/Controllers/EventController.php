@@ -99,6 +99,6 @@ class EventController extends Controller
 
         Event::findOrFail($id)->delete();
 
-        return redirect('/home')->with('msg', 'Mensagem excluída!');
+        return redirect('/home')->with('msg', 'Evento excluído com sucesso!');
     }
 }
