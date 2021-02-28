@@ -37,3 +37,18 @@ ion-icon {
 .card-date {
     margin-left: 10px;
 }
+
+form {
+    padding-left: 0 !important;
+}
+
+
+.error {
+    background-color: #ba1425;
+    color: #ffffff;
+    border: 1px solid #ee2f42;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}

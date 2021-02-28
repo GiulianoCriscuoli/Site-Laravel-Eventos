@@ -46,7 +46,7 @@
                         <div class="card-uf">{{ $event->uf }}</div>
                     </div>
                 
-                    <div class="card-persons" style="padding: 10px 0;">x participantes</div>
+                    <div class="card-persons" style="padding: 10px 0;">{{ count($event->users) }} participantes</div>
                     <a href="{{ 'events/'.$event->id }}" class="btn btn-primary red-button">Saiba mais</a>
                 </div>
             </div>
