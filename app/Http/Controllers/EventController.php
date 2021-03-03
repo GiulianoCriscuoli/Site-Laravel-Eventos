@@ -77,12 +77,19 @@ class EventController extends Controller
 
         $event = Event::findOrFail($id);
 
-        if($event) {
-            return view('events.edit', ['event' => $event]);
-        } else {
-            return view('pages.home');
+        $user = auth()->user();
 
-        }
+        if($user->id !== $event->user_id) {
+            return redirect('/home');
+        } else  {
+
+            if($event) {
+                return view('events.edit', ['event' => $event]);
+            } else {
+                return view('pages.home');
+    
+            }
+        } 
     }
 
     public function update(Request $request) {
@@ -114,10 +121,11 @@ class EventController extends Controller
 
         $events = $user->events;
 
-        $eventsParticipants = $user->eventsParticipants();
+        $eventsParticipants = $user->eventsParticipants;
 
         return view('home', ['events' => $events,
-         'eventsParticipants' => $eventsParticipants]);
+         'eventsParticipants' => $eventsParticipants,
+         'user' => $user]);
     }
 
     public function eventJoin($id) {

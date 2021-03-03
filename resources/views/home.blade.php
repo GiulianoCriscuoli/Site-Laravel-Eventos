@@ -44,6 +44,38 @@
             <a href="{{ route('events.create') }}" class="btn btn-sm btn-success">Adicionar Novo Evento</a>
         </p>
         @endif
+
+        <div class="col-md-10 offset-md-1 mt-4 mb-4 dashboard-title-container">
+            <h1>Eventos que estou participando</h1>
+        </div>
+        <div class="col-md-10 offset-md-1 dashboard-title-container">
+            @if(count($user->eventsParticipants))
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Evento</th>
+                        <th scope="col">Participantes</th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                @foreach($eventsParticipants as $event)
+                    <tbody>
+                        <tr>
+                            <td>{{ $loop->index + 1 }}</td>
+                            <td>{{ $event->title }}</td>
+                            <td>{{ count($event->users)}}</td>
+                            <td>
+                                <a href="#">Sair do Evento</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                @endforeach
+            </table>
+            @else 
+                <p>Você não participa de nenhum evento ainda! <a href="{{ routes('pages.home') }}"></a></p>
+            @endif
+        </div>
     </div>
 @endsection
 
