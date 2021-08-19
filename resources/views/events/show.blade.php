@@ -26,11 +26,13 @@
                 <div> @include('icons.calendar')</div>
                 <div class="card-date">{{ date('d/m/Y'), strtotime($event->date) }}</div>
             </div>
+            @if($hasConfirmedEvent)
             <form action="/events/join/{{ $event->id }}" method="POST">
                 @csrf
                 <a href="/events/join/{{ $event->id }}" class="btn btn-primary red-button"id="submit-event"
                      onclick="event.preventDefault(); this.closest('form').submit();">Confirmar a participação</a>
             </form>
+            @endif
 
         </div>
 

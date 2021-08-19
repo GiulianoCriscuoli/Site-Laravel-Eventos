@@ -29,7 +29,7 @@
             <div class="col-md-3 card">
                 <div class="card-body">
                     <div class="img-event">
-                        <img class="img-fluid" src="{{ 'images/upload/'.$event->image }}" alt="{{ $event->title }}">
+                        <img class="img-fluid" src="{{ 'images/upload/'.$event->image }}" alt="{{ $event->title }}" style="min-height: 163px;">
                     </div>
                     <div class="calendar-area">
                         <div> @include('icons.calendar')</div>

@@ -66,14 +66,19 @@
                             <td>{{ $event->title }}</td>
                             <td>{{ count($event->users)}}</td>
                             <td>
-                                <a href="#">Sair do Evento</a>
+                                <form action="/events/leave/{{ $event->id }}" method="post">
+                                    @csrf
+                                    @method('delete')
+                                    
+                                    <button type="submit" class="btn btn-danger btn-delete">Sair</button>
+                                </form>
                             </td>
                         </tr>
                     </tbody>
                 @endforeach
             </table>
             @else 
-                <p>Você não participa de nenhum evento ainda! <a href="{{ routes('pages.home') }}"></a></p>
+                <p>Você não participa de nenhum evento ainda! <a href="/"></a></p>
             @endif
         </div>
     </div>
